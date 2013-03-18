@@ -1,10 +1,11 @@
-<nav>
-<a href="/supermodlrui/">Models</a>
-<?php
+<ul class="nav nav-list">
+  	<li class="nav-header">supermodlr</li>
+  	<li><a href="/supermodlrui/">Models</a></li>
 
-if (isset($model_name))
-{
-	?><a href="/supermodlrui/<?php echo $model_name; ?>"><?php echo ucfirst(str_replace('_',' ',$model_name));?></a><?php
-}
-?>
-</nav>
+<?php if (isset($model_name)) { ?>
+
+	<li class="divider"></li>
+	<li class="active"><a href="/supermodlrui/<?= $model_name; ?>"><?= ucfirst(str_replace('_',' ',$model_name));?></a></li>
+<?php } ?>
+
+</ul>
