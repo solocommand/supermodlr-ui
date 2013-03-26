@@ -3,6 +3,12 @@
 <?php $controller->metatags('<meta name="viewport" content="width=device-width, initial-scale=1.0">'); ?>
 <?php $controller->css('/modules/supermodlr-ui/lib/bootstrap/css/bootstrap.min.css'); ?>
 
+<style type="text/css">
+	.error {
+		color: darkred;
+	}
+</style>
+
 <div class='main'>
 	<div class="container-fluid">
 		<div class="row-fluid">
